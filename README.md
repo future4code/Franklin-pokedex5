@@ -1,11 +1,11 @@
 # POKEDEX
 
 Nome dos integrantes: 
-- Pessoa 1
-- Pessoa 2
-- Pessoa 3
+- Aurila Sabrina Alves
+- Bruno Pereira Assunção
+- Danyelle Amarante Cândido
 
-Link do Surge: www.link.com.br
+Link do Surge: <<link do surge>>
 
 O que funciona:
 - Item 1
