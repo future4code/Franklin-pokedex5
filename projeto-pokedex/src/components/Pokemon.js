@@ -4,7 +4,7 @@ import {  PokemonImage,  CardContainer,  NamePokemon} from "./styled";
 import { goToDetails } from "../router/coordinator";
 import { useNavigate } from "react-router-dom";
 
-export function ListPokemons (props) {
+export function Pokemon (props) {
   const navigate = useNavigate();
 
   const [pokeId] = useRequestData(props.url)
@@ -14,7 +14,7 @@ export function ListPokemons (props) {
         <PokemonImage src={pokeId && pokeId.sprites.front_default} />
         <NamePokemon>{props.name}</NamePokemon> 
         <div>
-        <button onClick={props.addToPokedex}>add</button>
+        <button onClick={props.removePokemon}>Remover</button>           
         <button onClick={()=>goToDetails(navigate)}>Detalhes</button>
         </div>
       </CardContainer>
