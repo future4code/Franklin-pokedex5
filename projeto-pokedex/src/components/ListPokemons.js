@@ -1,9 +1,9 @@
 import React from "react";
 import useRequestData from "../hooks/useRequestData";
 import {
-  ProductImage,
+  PokemonImage,
   CardContainer,
-  NameText
+  NamePokemon
 } from "./styled";
 
 export function ListPokemons (props) {
@@ -12,8 +12,8 @@ export function ListPokemons (props) {
 
     return (
       <CardContainer>
-        <ProductImage src={pokeId && pokeId.sprites.front_default} />
-        <NameText>{props.name}</NameText> 
+        <PokemonImage src={pokeId && pokeId.sprites.front_default} />
+        <NamePokemon>{props.name}</NamePokemon> 
       </CardContainer>
     );
   };

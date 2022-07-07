@@ -13,11 +13,12 @@ export const CardContainer = styled.div`
   border-radius: 10%;
 `;
 
-export const NameText = styled.h2`
-  margin: 10px 0;
-`;
-
-export const ProductImage = styled.img`
+export const PokemonImage = styled.img`
   width: 100%;
   height: 150px;
 `;
+
+export const NamePokemon = styled.h2`
+  margin: 10px 0;
+`;
+
