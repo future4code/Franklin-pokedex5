@@ -15,7 +15,7 @@ const HomePage = () =>{
     return(
         <ScreenContainer>
             {data && data.results.map((pokemon) => {return(<ListPokemons
-                key={pokemon.id}
+                key={pokemon.url}
                 name={pokemon.name}
                 url={pokemon.url}
                 />)
