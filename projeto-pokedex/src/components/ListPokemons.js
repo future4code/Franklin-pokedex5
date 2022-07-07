@@ -1,12 +1,11 @@
 import React from "react";
 import useRequestData from "../hooks/useRequestData";
-import {
-  PokemonImage,
-  CardContainer,
-  NamePokemon
-} from "./styled";
+import {  PokemonImage,  CardContainer,  NamePokemon} from "./styled";
+import { goToDetails } from "../router/coordinator";
+import { useNavigate } from "react-router-dom";
 
 export function ListPokemons (props) {
+  const navigate = useNavigate();
 
   const [pokeId] = useRequestData(props.url)
 
@@ -14,6 +13,10 @@ export function ListPokemons (props) {
       <CardContainer>
         <PokemonImage src={pokeId && pokeId.sprites.front_default} />
         <NamePokemon>{props.name}</NamePokemon> 
+        <div>
+        <button onClick={()=>goToDetails(navigate)}>add</button>
+        <button onClick={()=>goToDetails(navigate)}>Detalhes</button>
+        </div>
       </CardContainer>
     );
   };

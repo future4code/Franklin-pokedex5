@@ -1,7 +1,6 @@
 import React from "react"
 import { ListPokemons } from "../components/ListPokemons";
 import { useNavigate } from "react-router-dom";
-import { goToDetails } from "../router/coordinator";
 import { BASE_URL } from "../constants/url";
 import useRequestData from "../hooks/useRequestData";
 import { ScreenContainer } from "./styled";
@@ -20,7 +19,6 @@ const HomePage = () =>{
                 url={pokemon.url}
                 />)
             })}
-            <button onClick={() => goToDetails(navigate)}>Detalhes</button>
       </ScreenContainer>
     );    
     }
