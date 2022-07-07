@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import ErrorPhoto from  '../photo/PikachuTriste1.png'
 import {BackToHome} from '../router/coordinator'
 
+
 const ErrorPage = () =>{
     const navigate = useNavigate()
 
