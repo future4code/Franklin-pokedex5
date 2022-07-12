@@ -8,7 +8,6 @@ import PokedexPage from "../pages/PokedexPage";
 function Router() {
   const [pokedex,setpokedex]=useState([])
 
-
     return (
         <BrowserRouter>
           <Routes>
