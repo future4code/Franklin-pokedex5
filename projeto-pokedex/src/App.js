@@ -1,4 +1,5 @@
 import Router from "./router/router";
+import { BrowserRouter } from "react-router-dom";
 import Header from "../src/components/Header";
 import { createGlobalStyle } from 'styled-components';
 
@@ -24,8 +25,10 @@ function App() {
       <GlobalStyles/>
     </div>
     <div className="App">
+    <BrowserRouter>
       <Header/>
       <Router/>
+    </BrowserRouter>
     </div>
     </>
   );
