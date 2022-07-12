@@ -15,7 +15,7 @@ export function Pokemon(props) {
       <NamePokemon>{props.name}</NamePokemon>
       <div>
         <button onClick={props.removePokemon}>Remover</button>
-        <button onClick={() => goToDetails(navigate)}>Detalhes</button>
+        <button onClick={() => goToDetails(navigate,props.name)}>Detalhes</button>
       </div>
     </CardContainer>
   );

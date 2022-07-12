@@ -10,7 +10,6 @@ function Router() {
 
 
   return (
-    <BrowserRouter>
       <Routes>
         <Route
           exact
@@ -25,7 +24,6 @@ function Router() {
         />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
-    </BrowserRouter>
   );
 }
 export default Router;
