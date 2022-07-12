@@ -13,6 +13,9 @@ const HomePage = () =>{
     const [data] = useRequestData(`${BASE_URL}`);
 
     return(
+        
+        
+       
         <ScreenContainer>
             {data && data.results.map((pokemon) => {return(<ListPokemons
                 key={pokemon.url}
@@ -22,6 +25,7 @@ const HomePage = () =>{
             })}
             <button onClick={() => goToDetails(navigate)}>Detalhes</button>
       </ScreenContainer>
+      
     );    
     }
     
