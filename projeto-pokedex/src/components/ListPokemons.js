@@ -1,22 +1,24 @@
 import React from "react";
 import useRequestData from "../hooks/useRequestData";
-import {  PokemonImage,  CardContainer,  NamePokemon} from "./styled";
+import { PokemonImage, CardContainer, NamePokemon } from "./styled";
 import { goToDetails } from "../router/coordinator";
 import { useNavigate } from "react-router-dom";
 
-export function ListPokemons (props) {
+export function ListPokemons(props) {
   const navigate = useNavigate();
 
-  const [pokeId] = useRequestData(props.url)
+  const [pokeId] = useRequestData(props.url);
 
-    return (
-      <CardContainer>
-        <PokemonImage src={pokeId && pokeId.sprites.front_default} />
-        <NamePokemon>{props.name}</NamePokemon> 
-        <div>
+  return (
+    <CardContainer>
+      <PokemonImage src={pokeId && pokeId.sprites.front_default} />
+      <NamePokemon>{props.name}</NamePokemon>
+      <div>
         <button onClick={props.addToPokedex}>add</button>
-        <button onClick={()=>goToDetails(navigate)}>Detalhes</button>
-        </div>
-      </CardContainer>
-    );
-  };
+        <button onClick={() => goToDetails(navigate, props.name)}>
+          Detalhes
+        </button>
+      </div>
+    </CardContainer>
+  );
+}
