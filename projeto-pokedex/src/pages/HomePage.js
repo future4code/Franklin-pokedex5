@@ -13,14 +13,18 @@ const HomePage = ({pokedex,setpokedex}) =>{
     const navigate = useNavigate();
 
     const addToPokedex = (pokemon) =>{
-        console.log(pokemon)
         const newPokedex = [...pokedex]
         newPokedex.push(pokemon)
-        console.log(newPokedex)
         setpokedex(newPokedex)
+
+        let removePokemon = data.results.indexOf(pokemon);
+        data.results.splice(removePokemon, 1);
     }
 
     return(
+        
+        
+       
         <ScreenContainer>
             {data && data.results.map((pokemon) => {return(<ListPokemons
                 key={pokemon.url}
@@ -31,6 +35,7 @@ const HomePage = ({pokedex,setpokedex}) =>{
             })}
             <button onClick={()=>goToPokedex(navigate)}>pokedex</button>
       </ScreenContainer>
+      
     );    
     }
     
