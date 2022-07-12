@@ -16,7 +16,7 @@ export const CardContainer = styled.div`
 
 export const ContainerImg = styled.div`
   width: 200px;
-  height: 350px;
+  height: 290px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,8 +31,8 @@ export const Container = styled.div`
 
 export const CardDetails = styled.div`
   border: 2px solid black;
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -44,8 +44,8 @@ export const CardDetails = styled.div`
 
 export const CardContainerDetails = styled.div`
   border: 2px solid black;
-  width: 300px;
-  height: 400px;
+  width: 200px;
+  height: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -58,7 +58,7 @@ export const CardContainerDetails = styled.div`
 export const CardContainerMove = styled.div`
   border: 2px solid black;
   width: 300px;
-  height: 265px;
+  height: 215px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -71,7 +71,7 @@ export const CardContainerMove = styled.div`
 export const CardContainerTypes = styled.div`
   border: 2px solid black;
   width: 300px;
-  height: 120px;
+  height: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;

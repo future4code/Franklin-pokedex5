@@ -1,21 +1,25 @@
-import { useEffect, useState } from 'react'
-import axios from 'axios'
+import { useEffect, useState } from "react";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const useRequestData = (url) => {
-  const [data, setData] = useState()
+  const navigate = useNavigate();
+  const [data, setData] = useState();
 
   useEffect(() => {
     axios
       .get(url)
       .then((response) => {
-        setData(response.data)
+        setData(response.data);
       })
       .catch((error) => {
-        alert(error)
-      })
-  }, [url])
+        if (error.respose.status === 404) {
+          navigate("/404");
+        }
+      });
+  }, [url, navigate]);
 
-  return [data]
-}
+  return [data];
+};
 
 export default useRequestData;

@@ -8,15 +8,25 @@ import PokedexPage from "../pages/PokedexPage";
 function Router() {
   const [pokedex, setpokedex] = useState([]);
 
-    return (
 
-          <Routes>
-              <Route exact path='/' element={<HomePage pokedex={pokedex} setpokedex={setpokedex}/>}/> 
-              <Route exact path='/details' element={<DetailsPage/>}/>   
-              <Route exact path='/pokedex' element={<PokedexPage pokedex={pokedex} setpokedex={setpokedex}/>}/>     
-              <Route path='*' element={<ErrorPage/>}/>
-          </Routes>
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route
+          exact
+          path="/"
+          element={<HomePage pokedex={pokedex} setpokedex={setpokedex} />}
+        />
+        <Route exact path="/details/:name" element={<DetailsPage />} />
+        <Route
+          exact
+          path="/pokedex"
+          element={<PokedexPage pokedex={pokedex} setpokedex={setpokedex} />}
+        />
+        <Route path="*" element={<ErrorPage />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
+export default Router;
 
-    );
-  }
-  export default Router;
