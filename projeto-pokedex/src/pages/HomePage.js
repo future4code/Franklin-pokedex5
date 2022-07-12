@@ -21,6 +21,9 @@ const HomePage = ({pokedex,setpokedex}) =>{
     }
 
     return(
+        
+        
+       
         <ScreenContainer>
             {data && data.results.map((pokemon) => {return(<ListPokemons
                 key={pokemon.url}
@@ -31,6 +34,7 @@ const HomePage = ({pokedex,setpokedex}) =>{
             })}
             <button onClick={()=>goToPokedex(navigate)}>pokedex</button>
       </ScreenContainer>
+      
     );    
     }
     
