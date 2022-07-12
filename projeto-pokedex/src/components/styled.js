@@ -1,14 +1,15 @@
 import styled from "styled-components";
+import background from '../assets/background.png';
 
 export const CardContainer = styled.div`
   border: 2px solid black;
-  width: 200px;
-  height: 250px;
+  width: 220px;
+  height: 270px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 10px;
-  background-color: #97bfb4;
+  margin: 20px;
+  background-image: url(${background});
   border-color: #97bfb4;
   border-radius: 10%;
 `;
@@ -82,9 +83,9 @@ export const CardContainerTypes = styled.div`
 
 export const PokemonImage = styled.img`
   width: 100%;
-  height: 150px;
+  height: 250px;
 `;
 
 export const NamePokemon = styled.h2`
-  margin: 10px 0;
+  margin: 5px 0;
 `;

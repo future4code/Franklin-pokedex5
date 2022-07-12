@@ -1,13 +1,10 @@
 import React from "react"
-import { useNavigate } from "react-router-dom";
 import { ScreenContainer } from "./styled";
-import { goToHome } from "../router/coordinator";
 import { Pokemon } from "../components/Pokemon";
 
 
 const PokedexPage = (props) =>{
-    const pokedex = props.pokedex
-    const navigate = useNavigate();
+    const pokedex = props.pokedex;
 
     const removePokemon = (id) =>{
     const newPokedex =[...pokedex]
@@ -28,8 +25,6 @@ const PokedexPage = (props) =>{
                     />
                 )
             })}
-            pojedex
-        <button onClick={()=>goToHome(navigate)}>lista de pokemons</button>
         </ScreenContainer>
     ); 
 }
