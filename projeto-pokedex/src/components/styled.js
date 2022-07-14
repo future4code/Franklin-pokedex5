@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import background from '../assets/background.png';
+import image from '../assets/image.jpg';
 
 export const CardContainer = styled.div`
   border: 2px solid black;
@@ -9,7 +9,8 @@ export const CardContainer = styled.div`
   flex-direction: column;
   align-items: center;
   margin: 20px;
-  background-image: url(${background});
+  background-image: url(${image});
+  background-size: cover;
   border-color: #97bfb4;
   border-radius: 10%;
 `;

@@ -5,9 +5,9 @@ import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
 html{
-    --principal-white: #EDEDED;
-    --background-principal: #372323;
-    --selected-color: #97BFB4;
+    --principal-white: white;
+    --background-principal: #5E5C36;
+    --selected-color: #fbca04;
 
     * { 
   margin: 0;
@@ -15,6 +15,7 @@ html{
   box-sizing: border-box;
 }
 background-color: var(--background-principal);
+background: linear-gradient(#553B80, #FDBEB7);
 }
 `
 

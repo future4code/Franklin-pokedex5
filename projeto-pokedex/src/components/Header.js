@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import Vector from '../assets/Vector.png'
+import pokemon from '../assets/pokemon.png'
 import { goToHome, goToPokedex } from "../router/coordinator";
 import { useNavigate } from "react-router-dom";
 
@@ -16,15 +16,14 @@ display: flex;
 padding: 20px;
 `
 
-const TitleHeader= styled.h1`
-color: var(--principal-white);
-`
 
 const Pokebola = styled.img`
-height: 40px;
+height: 60px;
+width: 200px;
 display: inline-block;
 margin: 0px 0px 0px 20px;
 color: var(--principal-white);
+
 `
 
 const Tabs = styled.div`
@@ -47,6 +46,7 @@ align-items: center;
 padding: 0px;
 text-decoration: none;
 margin: 10px;
+margin-top: 30px;
 width: 70px;
 height: 32px;
 font-style: normal;
@@ -67,13 +67,12 @@ function Header(){
     return(
         <>
         <HeaderStyle>
-           <TitleHeader>Pokémons</TitleHeader>
-           <Pokebola src={Vector}/>
+           <Pokebola src={pokemon}/>
         
         </HeaderStyle>
         <Tabs>
             <TabsNames>
-                <TabsOptions onClick={()=>goToHome(navigate)}>List</TabsOptions>
+                <TabsOptions onClick={()=>goToHome(navigate)}>Lista</TabsOptions>
                 <TabsOptions onClick={()=>goToPokedex(navigate)}>Pokedex</TabsOptions>
                     
             </TabsNames>

@@ -11,15 +11,12 @@ function Router() {
 
   return (
       <Routes>
-        <Route
-          exact
-          path="/"
+        <Route exact path="/"
           element={<HomePage pokedex={pokedex} setpokedex={setpokedex} />}
         />
-        <Route exact path="/details/:name" element={<DetailsPage />} />
-        <Route
-          exact
-          path="/pokedex"
+        <Route exact path="/details/:name" 
+          element={<DetailsPage />} />
+        <Route exact path="/pokedex"
           element={<PokedexPage pokedex={pokedex} setpokedex={setpokedex} />}
         />
         <Route path="*" element={<ErrorPage />} />
