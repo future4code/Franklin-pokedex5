@@ -1,8 +1,10 @@
 import React from "react";
 import useRequestData from "../hooks/useRequestData";
-import { PokemonImage, CardContainer, NamePokemon } from "./styled";
+import { PokemonImage, CardContainer, NamePokemon, PokeButton, DetailsButton } from "./styled";
 import { goToDetails } from "../router/coordinator";
 import { useNavigate } from "react-router-dom";
+import Button from '@mui/material/Button';
+
 
 export function ListPokemons(props) {
   const navigate = useNavigate();
@@ -11,14 +13,13 @@ export function ListPokemons(props) {
 
   return (
     <CardContainer>
+      <Button variant="outlined" onClick={() => goToDetails(navigate, props.name)}>Detalhes</Button>
       <PokemonImage src={pokeId && pokeId.sprites.front_default} />
       <NamePokemon>{props.name}</NamePokemon>
       <div>
-        <button onClick={props.addToPokedex}>add</button>
-        <button onClick={() => goToDetails(navigate, props.name)}>
-          Detalhes
-        </button>
+        <PokeButton onClick={props.addToPokedex}>+</PokeButton >
       </div>
     </CardContainer>
   );
 }
+

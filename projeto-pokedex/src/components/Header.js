@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-
 import pokemon from '../assets/pokemon.png'
 import { goToHome, goToPokedex } from "../router/coordinator";
 import { useNavigate } from "react-router-dom";
@@ -74,7 +73,6 @@ function Header(){
             <TabsNames>
                 <TabsOptions onClick={()=>goToHome(navigate)}>Lista</TabsOptions>
                 <TabsOptions onClick={()=>goToPokedex(navigate)}>Pokedex</TabsOptions>
-                    
             </TabsNames>
         </Tabs> 
        
