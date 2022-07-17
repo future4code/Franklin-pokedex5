@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import image from '../assets/image.jpg';
 import Pokeball from '../assets/Pokeball.png';
+import Dump from '../assets/Dump.png';
 
 export const CardContainer = styled.div`
   border: 2px solid black;
@@ -26,10 +27,20 @@ export const ContainerImg = styled.div`
   margin: 10px;
 `;
 
+export const TitleDetails = styled.h1`
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 30px;
+
+`
+
 export const Container = styled.div`
   display: flex;
   align-items: center;
   margin: 10px;
+  justify-content: center;
+  font-size: 20px;
 `;
 
 export const CardDetails = styled.div`
@@ -40,7 +51,8 @@ export const CardDetails = styled.div`
   flex-direction: column;
   align-items: center;
   margin: 10px;
-  background-color: #97bfb4;
+  background-image: url(${image}) ;
+  background-size: contain;
   border-color: #97bfb4;
   border-radius: 10%;
 `;
@@ -53,7 +65,8 @@ export const CardContainerDetails = styled.div`
   flex-direction: column;
   align-items: center;
   margin: 10px;
-  background-color: #97bfb4;
+  background-image: url(${image}) ;
+  background-size: contain;
   border-color: #97bfb4;
   border-radius: 2%;
 `;
@@ -66,7 +79,8 @@ export const CardContainerMove = styled.div`
   flex-direction: column;
   align-items: center;
   margin: 5px;
-  background-color: #97bfb4;
+  background-image: url(${image})  ;
+  background-size: contain;
   border-color: #97bfb4;
   border-radius: 2%;
 `;
@@ -79,7 +93,8 @@ export const CardContainerTypes = styled.div`
   flex-direction: column;
   align-items: center;
   margin: 5px;
-  background-color: #97bfb4;
+  background-image: url(${image})  ;
+  background-size: contain;
   border-color: #97bfb4;
   border-radius: 2%;
 `;
@@ -103,11 +118,26 @@ export const PokeButton = styled.button`
   width: 50px;
   border-radius: 50%;
   border: 1px solid white;
+  &:hover{
+    border: 3px solid red;
+    height: 54px;
+    width: 54px;
 
-/*   font-weight:bolder;
-  font-size: 40px;
-  color: #fbca04; */
+  }
 `
-
-
+export const DumpButton = styled.button`
+  background-image: url(${Dump});
+  background-size: 48px 48px;
+  margin:10px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 1px solid white;
+  &:hover{
+    border: 3px solid red;
+    height: 54px;
+    width: 54px;
+    
+  }
+`
 

@@ -14,6 +14,7 @@ const HomePage = ({pokedex,setpokedex}) =>{
         newPokedex.push(pokemon)
         setpokedex(newPokedex)
         data.results.splice(pokemon, 1);
+        
     }
     return(       
         <ScreenContainer>
