@@ -5,12 +5,19 @@
 👨‍💻- Bruno Pereira Assunção
 👩‍💻- Danyelle Amarante Cândido
 
-🌐Link do Surge: <<link do surge>>
+🌐Link do Surge: <<pokedex-grupo5-franklin.surge.sh>>
 
 ✅O que funciona:
-- Item 1
-- Item 2
+- Listar Pokemons
+- Botões de navegação em todas as páginas(colocamos os botões lista e pokedex no header por isso não há necessidade do botão de voltar)
+-detalhes dos pokemons
+-adicionar pokemons na pokedex
+-responsividade
+-trazer 20 pokemons
+
+
+
 
 ❌O que não funciona: 
-- Item 3
-- Item 4
+- não há um botão de add/remover na página de detalhes
+-remover pokemon da lista quando adicionado da pokedex

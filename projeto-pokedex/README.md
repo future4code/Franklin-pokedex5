@@ -2,7 +2,7 @@
 
 # PROJETO POKEDEX
 
-Nesta aplicação consumiremos uma api que nos trará diversos tipos de pokemons .
+Nesta aplicação consumimos a api pokeapi, e com ela fizemos a página que lista os pokemons e a página que pokedex onde podemos adicionar e remover pokemons, támbem temos a pagina de detalhes responsável por trazer os detalhes do pokemon selecionado .
 
 ## 🚀 Começando
 
@@ -25,7 +25,7 @@ Versão 1.0;
 
 ## 🎁 Expressões de gratidão
 
-* Obrigada @Labenu @LbnGui 📢🤓.
+* Obrigada @Labenu @LbnGui @LbnAnna📢🤓.
 
 ---
 🤝🏽inspirado no readme do @lohhans
