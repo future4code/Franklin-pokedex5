@@ -6,7 +6,7 @@
 👩‍💻- Danyelle Amarante Cândido
 
 🌐Link do Surge: 
-[Clique aqui para ver nosso projeto](pokedex-grupo5-franklin.surge.shm)
+[Clique aqui para ver nosso projeto](pokedex-grupo5-franklin.surge.sh)
 
 
 ✅O que funciona:
