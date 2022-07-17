@@ -11,6 +11,7 @@ const PokedexPage = (props) =>{
     const indexPokemon = newPokedex.findIndex((pokemonInPokedex)=> {return pokemonInPokedex.id === id})
         newPokedex.splice(indexPokemon,1)
         props.setpokedex(newPokedex)
+        
     }
 
     return(

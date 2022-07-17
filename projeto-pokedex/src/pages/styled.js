@@ -8,12 +8,16 @@ export const ScreenContainer = styled.div`
 `;
 
 export const CenterContiner = styled.div`
-  text-align: center;
+  display: flex;
   align-items: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-  color: #EDEDED
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 50px;
+  color:white;
+
+  p{
+    font-size: 20px;
+    margin: 10px;
+  }
+
 `;

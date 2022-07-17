@@ -6,7 +6,7 @@ import { createGlobalStyle } from 'styled-components';
 const GlobalStyles = createGlobalStyle`
 html{
     --principal-white: white;
-    --background-principal: #5E5C36;
+    --background-principal: #553B80;
     --selected-color: #fbca04;
 
     * { 
@@ -15,9 +15,10 @@ html{
   box-sizing: border-box;
 }
 background-color: var(--background-principal);
-background: linear-gradient(#553B80, #FDBEB7);
+
 }
 `
+
 
 function App() {
   return (
@@ -25,7 +26,7 @@ function App() {
     <div>
       <GlobalStyles/>
     </div>
-    <div className="App">
+    <div>
     <BrowserRouter>
       <Header/>
       <Router/>

@@ -34,7 +34,8 @@ margin-bottom: 20px;
 `
 
 const TabsNames = styled.ul`
-margin-left: 20px;
+margin-top: 15px;
+margin-left: 50px;
 display: flex;
 `
 
@@ -50,7 +51,7 @@ width: 70px;
 height: 32px;
 font-style: normal;
 font-weight: 600;
-font-size: 14px;
+font-size: 18px;
 line-height: 24px;
 color: var(--principal-white);
 border-bottom:2px solid var(--principal-white) ;
