@@ -5,6 +5,8 @@
 👨‍💻- Bruno Pereira Assunção
 👩‍💻- Danyelle Amarante Cândido
 
+
+
 🌐Link do Surge: 
 [Clique aqui para ver nosso projeto](https://pokedex-grupo5-franklin.surge.sh)
 
